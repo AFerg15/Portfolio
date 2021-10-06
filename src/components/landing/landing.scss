@@ -1,17 +1,9 @@
 @import "../../global.scss";
 
-.intro {
+.landing {
     background-color: white;
     display: flex;
     justify-content: center;
-    background-image: url('../../../src/images/introbg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    animation: fadeIn 5s;
-    
-
     
 
     @include mobile{
@@ -19,14 +11,13 @@
         align-items: center;
 
     }
-
-
+    
     .text{
         flex: 0.5;
         position: absolute;
         
         .wrapper{
-            margin-top: 400px;
+            margin-top: 300px;
             width: 100%;
             height: 100%;
             padding-left: 50px;
@@ -39,7 +30,7 @@
             }
 
             h1{
-                font-size: 50px;
+                font-size: 75px;
                 margin: 10px, 0;
 
                 @include mobile{
@@ -47,7 +38,7 @@
                 }
             }
             h2{
-                font-size: 35px;
+                font-size: 45px;
 
             }
             h3{
@@ -63,7 +54,7 @@
                 }
 
                 .ityped-cursor {
-                    animation: blink 1s infinite;
+                    animation: blink 1s 5s infinite;
                 }
 
                 @keyframes blink {
@@ -82,7 +73,6 @@
             left: 50%;
 
             img {
-                margin-top: 100px;
                 width: 30px;
                 animation: arrowBlink 2s infinite;
             }
@@ -98,27 +88,3 @@
     }
 
 }
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }

@@ -5,10 +5,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 75px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-attachment: fixed;
 
     h1{ 
         font-size: 50px;
+        padding: 20px;
 
         @include mobile{
             font-size: 20px;
@@ -29,7 +32,7 @@
         
     }
     .container {
-        width: 70%;
+        width: 90%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -43,8 +46,8 @@
         }
 
         .item{
-            width: 220px;
-            height: 200px;
+            width: 320px;
+            height: 250px;
             margin: 10px 20px;
             display: flex;
             align-items: center;
@@ -61,7 +64,9 @@
 
             h3{ 
                 position: absolute;
-                font-size: 20px;
+                font-size: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
             img{
                 width: 100%;

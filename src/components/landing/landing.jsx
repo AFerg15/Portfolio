@@ -1,36 +1,26 @@
-import React, {useEffect, useRef} from 'react'
+import React from 'react'
 import "./landing.scss"
-import { init } from 'ityped'
-import { TurnedInTwoTone } from '@material-ui/icons'
+
 
 export default function Landing() {
-    const textRef = useRef()
-    
-    useEffect (()=>{
-        init(textRef.current, {
-            showCursor: true,
-            startDelay: 2000,
-            typeSpeed: 50,
-            backDelay: 1500,
-            backSpeed:60,
-            loop: false,
-            disableBackTyping: false,
-            strings: ["design", "develop", "create."],
-          });
-    }, [])
-
 
     return (
         <div className="landing" id="landing" 
             >
-            <div className="imgContainer">
-                </div>
-            <div className="text">
-                <div className="wrapper">
-                    <h1>I'm Amanda Ferguson</h1>
-                    <h3>And I <span ref={textRef}></span></h3>
-                </div>
-            </div>
+             <div className="left">
+        <div className="imgContainer">
+
         </div>
+      </div>
+      <div className="right">
+        <div className="wrapper">
+          <h2>Hi There, I'm</h2>
+
+        </div>
+        <a href="#portfolio">
+          <img src="assets/down.png" alt="" />
+        </a>
+      </div>
+    </div>
     )
 }
